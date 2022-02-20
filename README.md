@@ -1,12 +1,32 @@
-# auto-spotify-lists
+# Auto-spotify-lists
 
 
-'''
-adasda
-'''
+```
+client_id = '' 
+client_secret = ''
+redirect_uri = ''
+spotify_name = ''
+spotify_id_new = ''
+```
 
-client_id = '' it corresponds to the 
-client_secret = '502b106fd2f64280a642c7bf2644c6bd'
-redirect_uri = 'https://github.com/z3hcnas'
-spotify_name = 'lol'
-spotify_id_new = 'zj4jfhtfl7h6vqmidwzeixdub'
+## Variables to the code
+
+#### Settings of the app 
+client id --> the client id of the app
+client secret --> the client secret of the app
+redirect uri --> is the url setted into the spotify app
+
+#### Settings of the accounts
+spotify name --> is the nick from the old account
+spotify id new --> is the the id of the new account
+
+## Usage
+
+First execute the script main.py
+Then login with the old account in the window
+
+Later copy the code of the url
+
+And paste it inside the terminal
+
+When the window appears again login with new one and the lists it will have been created.
