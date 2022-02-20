@@ -25,9 +25,12 @@ spotify id new --> is the the id of the new account
 
 First execute the script main.py<br>
 Then login with the old account in the window
+![Login](/images/spotify-login.png)
 
 Later copy the code of the url
+![Code](/images/where is the code.png)
 
 And paste it inside the terminal
+![Code terminal](/images/terminal code.png)
 
 When the window appears again login with new one and the lists it will have been created.
