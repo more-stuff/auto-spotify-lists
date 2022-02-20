@@ -20,7 +20,8 @@ redirect uri --> is the url setted into the spotify app
 spotify name --> is the nick from the old account
 spotify id new --> is the the id of the new account
 
-</hr>
+<hr>
+
 ## Usage
 
 First execute the script main.py
