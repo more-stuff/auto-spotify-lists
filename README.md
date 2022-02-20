@@ -13,13 +13,14 @@ spotify_id_new = ''
 
 #### Settings of the app 
 client id --> the client id of the app
-client secret --> the client secret of the app
+client secret --> the client secret of the app 
 redirect uri --> is the url setted into the spotify app
 
 #### Settings of the accounts
 spotify name --> is the nick from the old account
 spotify id new --> is the the id of the new account
 
+</hr>
 ## Usage
 
 First execute the script main.py
