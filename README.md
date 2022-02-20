@@ -12,14 +12,13 @@ spotify_id_new = ''
 ## Variables to the code
 
 #### Settings of the app 
-client id --> the client id of the app
-client secret --> the client secret of the app 
-redirect uri --> is the url setted into the spotify app
+client id --> the client id of the app <br>
+client secret --> the client secret of the app <br>
+redirect uri --> is the url setted into the spotify app <br>
 
 #### Settings of the accounts
-spotify name --> is the nick from the old account
+spotify name --> is the nick from the old account <br>
 spotify id new --> is the the id of the new account
-
 
 
 ## Usage
