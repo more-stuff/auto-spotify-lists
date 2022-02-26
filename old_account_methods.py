@@ -26,16 +26,16 @@ def get_playlists(token, spotify_name):
         print(e)
 
 def get_songs_from_playlist(token, id_playlists):
-    songs_id = {}
+    songs_id = []
     try:
         for list in id_playlists:
-            songs_id[list] = []
             headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
             response = requests.get(f'https://api.spotify.com/v1/playlists/{list}/tracks', headers=headers)
             response = response.json()
+            list_songs = []
             for song in response['items']:
-                songs_id[list].append(f"spotify%3Atrack%3A{song['track']['id']}")
-                song['track']['id']
+                list_songs.append(f"spotify:track:{song['track']['id']}")
+            songs_id.append(list_songs)
         return songs_id
 
     except Exception as e:
