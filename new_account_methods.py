@@ -46,3 +46,10 @@ def follow_list(token, lists_to_follow):
             print(response)
         except Exception as e:
             print(e)
+
+
+def like_songs(token, id_liked_songs):
+    for song in id_liked_songs:
+        headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+        response = requests.put(f'https://api.spotify.com/v1/me/tracks?ids={song}', headers=headers)
+        response = response.json()

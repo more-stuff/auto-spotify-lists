@@ -8,7 +8,7 @@ client_secret = '502b106fd2f64280a642c7bf2644c6bd'
 redirect_uri = 'https://github.com/z3hcnas'
 spotify_name = 'lol'
 spotify_id_new = 'zj4jfhtfl7h6vqmidwzeixdub'
-version = ''
+version = 'cutre'
 
 if version == 'cutre':
     token = auth.cutre_version()
@@ -23,8 +23,8 @@ else:
 
 id_own_playlists, id_followed_playlists, name_my_lists = old_account_methods.get_playlists(token, spotify_name)
 songs_id = old_account_methods.get_songs_from_playlist(token, id_own_playlists)
+id_liked_songs = old_account_methods.get_liked_songs(token)
 
-print(songs_id)
 
 if version == 'cutre':
     token = auth.cutre_version()
@@ -38,3 +38,4 @@ else:
 id_new_lists = new_account_methods.create_playlists(token, spotify_id_new, name_my_lists)
 new_account_methods.add_songs_to_playlists(token, songs_id, id_new_lists)
 new_account_methods.follow_list(token, id_followed_playlists)
+new_account_methods.like_songs(token, id_liked_songs)

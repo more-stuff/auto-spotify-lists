@@ -5,7 +5,7 @@ from selenium import webdriver
 
 
 def get_code(client_id, encoded_redirect_url):
-    scope = 'user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative'
+    scope = 'user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative user-library-modify user-library-read'
     output = requests.get(f"https://accounts.spotify.com/authorize?client_id={client_id}&response_type=code&redirect_uri={encoded_redirect_url}&scope={scope}")
     driver = webdriver.Chrome('./chromedriver.exe')
     print("Now go here and accept the terms")
@@ -47,4 +47,6 @@ def cutre_version():
     print('playlist-modify-public')
     print('playlist-modify-private')
     print('playlist-read-collaborative')
+    print('user-library-modify')
+    print('user-library-read')
     return input('Introduce the token:')
