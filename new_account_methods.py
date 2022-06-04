@@ -13,6 +13,7 @@ def create_playlists(token, user_id, name_list, public=True):
 
             response = requests.post(f"https://api.spotify.com/v1/users/{user_id}/playlists", json=data, headers=headers)
             response = response.json()
+            print(response)
             id_lists.append(response['id'])
 
         return id_lists

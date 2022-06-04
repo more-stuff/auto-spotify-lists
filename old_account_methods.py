@@ -45,8 +45,8 @@ def get_liked_songs(token):
     id_liked_songs = []
     headers = {"Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept":"application/json"}
     response = requests.get(f'https://api.spotify.com/v1/me/tracks', headers=headers)
+    print(response)
     response = response.json()
-
     for song in response['items']:
         id_liked_songs.append(song['track']['id'])
 
